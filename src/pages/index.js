@@ -56,8 +56,8 @@ export default function Home() {
 
           <ul className={styles.social}>
             {ordenedLinks.map(({ href, label }) => (
-              <li>
-                <a className={styles.socialButton} href={href} target="_blank" key={label}> {label} </a>
+              <li key={label}>
+                <a className={styles.socialButton} href={href} rel="noopener" key={label}> {label} </a>
               </li>
             ))}
           </ul>
